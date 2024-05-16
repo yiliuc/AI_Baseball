@@ -1,0 +1,15 @@
+---
+title: '11'
+author: "Yiliu Cao"
+date: "2024-05-16"
+output: pdf_document
+---
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+data <- read.csv("Data/Batter Data")
+```
+
