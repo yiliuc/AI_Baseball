@@ -7,9 +7,40 @@ output: pdf_document
 
 ```{r}
 library(tidyverse)
+library(ggplot2)
 ```
 
 ```{r}
-data <- read.csv("Data/Batter Data")
+guerrero <- read.csv("Data/Batter Data/2023_Guerrerojr.csv")
+gausman <- read.csv("Data/Pitcher Data/2023_Gausman.csv")
 ```
 
+```{r}
+gausman %>% 
+  group_by(pitch_type) %>% 
+  summarise(n=n())
+```
+
+```{r}
+gausman %>% 
+  ggplot(aes(x=release_speed)) +
+  geom_histogram()
+```
+
+```{r}
+gausman %>% 
+  ggplot(aes(x=release_pos_x)) +
+  geom_histogram()
+```
+
+```{r}
+gausman %>% 
+  ggplot(aes(x=release_pos_y)) +
+  geom_histogram()
+```
+
+```{r}
+gausman %>% 
+  ggplot(aes(x=release_pos_z)) +
+  geom_histogram()
+```
