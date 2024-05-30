@@ -11,8 +11,8 @@ library(ggplot2)
 ```
 
 ```{r}
-guerrero <- read.csv("Data/Batter Data/2023_Guerrerojr.csv")
-gausman <- read.csv("Data/Pitcher Data/2023_Gausman.csv")
+batter <- read.csv("Data/Batter Data/2023_Guerrerojr.csv")
+pitcher <- read.csv("Data/Pitcher Data/2023_Gausman.csv")
 ```
 
 ```{r}
