@@ -9,7 +9,7 @@ library(markovchain)
 library(diagram)
 
 # Update the header of the data (Optional if we already save the new data)
-# source("scripts/update_data.R")
+# source("scripts/data_clean.R")
 
 ## -----------------------------------------------------------------------------------------------
 # Load the data
